@@ -7,7 +7,7 @@ import axios from 'axios';
 function App() {
   useEffect(() => {
     const fetchApi = async () => {
-      const data = await axios.get('https://ivku4mpd30.execute-api.ap-south-1.amazonaws.com/dev/todo/id');
+      const data = await axios.get('https://ivku4mpd30.execute-api.ap-south-1.amazonaws.com/dev/todo/1');
       console.log('data', data);
     }
     fetchApi();
