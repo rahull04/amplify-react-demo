@@ -15,7 +15,7 @@
       "function": {
         "fetchTodoById": {
           "deploymentBucketName": "amplify-todoapp-dev-150602-deployment",
-          "s3Key": "amplify-builds/fetchTodoById-51327776514a6339614d-build.zip"
+          "s3Key": "amplify-builds/fetchTodoById-446e3977505237786572-build.zip"
         }
       },
       "api": {
