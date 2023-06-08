@@ -12,10 +12,10 @@ exports.handler = async (event) => {
          "Access-Control-Allow-Origin": "*",
          "Access-Control-Allow-Headers": "*"
      },
-        body: {
+        body: JSON.stringify({
             id: 1,
             title: 'Buy books from stationery',
             isComplete: false,
-        },
+        }),
     };
 };
