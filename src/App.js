@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import axios from 'axios';
+
 
 function App() {
+  useEffect(() => {
+    const fetchApi = async () => {
+      const data = await axios.get('https://ivku4mpd30.execute-api.ap-south-1.amazonaws.com/dev/todo/id');
+      console.log('data', data);
+    }
+    fetchApi();
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className="App-header">
+        <h2>My App Content</h2>
+    </header>
   );
 }
 

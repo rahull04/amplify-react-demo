@@ -1,0 +1,43 @@
+{
+  "api": {
+    "todo": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "fetchTodoById"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "fetchTodoById": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_fetchTodoById_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fetchTodoById"
+        }
+      ]
+    },
+    "AMPLIFY_function_fetchTodoById_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fetchTodoById"
+        }
+      ]
+    }
+  }
+}

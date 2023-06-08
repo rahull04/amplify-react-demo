@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/todo/id": {
+      "name": "/todo/id",
+      "lambdaFunction": "fetchTodoById",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
