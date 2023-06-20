@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
 import axios from 'axios';
+import { Header } from './Header';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   }, [])
   return (
     <header className="App-header">
+      <Header title='Hii' />
         <h2>My App Content</h2>
     </header>
   );
